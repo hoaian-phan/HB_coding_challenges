@@ -29,12 +29,12 @@ def fit_to_width(string, num):
     
     str_to_print = words[0]
     for i in range(1, len(words)):
-        if len(str_to_print) + 1 + len(words[i]) <= 10:
+        if len(str_to_print) + 1 + len(words[i]) <= num:
             str_to_print += " " + words[i]
         else:
             print(str_to_print)
             str_to_print = words[i]
-        if len(words[i]) >= 10:
+        if len(words[i]) >= num:
             print(words[i])
 
 if __name__ == "__main__":
